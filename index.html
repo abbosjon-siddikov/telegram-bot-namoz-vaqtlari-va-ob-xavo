@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <title>Namoz vaqtlari</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div id="overlay"></div>
+  <div id="locationAlert">
+    <p>📍 Iltimos, joylashuvga ruxsat bering</p>
+    <button onclick="requestLocation()">Ruxsat berish</button>
+  </div>
+
+  <div class="card">
+    <div class="header">
+      <div class="title">Namoz vaqtlari</div>
+      <div class="weather">
+        <img src="assets/sun.png" alt="weather" class="weather-icon">
+        <span id="temperature">--°</span>
+      </div>
+    </div>
+
+    <div class="visual">
+      <img src="assets/moon.png" class="moon" />
+      <div class="compass">
+        <img src="assets/compass.svg" class="compass-img" />
+      </div>
+      <img src="assets/sun.png" class="sun" />
+    </div>
+
+    <ul class="prayer-list" id="prayerList">
+      <li><span class="icon">🌙</span> Bomdod <span class="time">--:--</span></li>
+      <li><span class="icon">☀️</span> Peshin <span class="time">--:--</span></li>
+      <li><span class="icon">⛅</span> Asr <span class="time">--:--</span></li>
+      <li><span class="icon">🌇</span> Shom <span class="time">--:--</span></li>
+      <li><span class="icon">🌌</span> Xufton <span class="time">--:--</span></li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

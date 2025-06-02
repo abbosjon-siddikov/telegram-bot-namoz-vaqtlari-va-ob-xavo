@@ -1,0 +1,91 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0a3d2c, #05221a);
+  color: white;
+}
+.card {
+  margin: 20px;
+  background-color: #0e5c44;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.weather {
+  display: flex;
+  align-items: center;
+}
+.weather-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+}
+.visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.sun, .moon {
+  width: 50px;
+  height: 50px;
+}
+.compass-img {
+  width: 60px;
+  height: 60px;
+}
+.prayer-list {
+  list-style: none;
+  padding: 0;
+}
+.prayer-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.icon {
+  margin-right: 8px;
+}
+#overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(2px);
+  z-index: 9;
+  display: none;
+}
+#locationAlert {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  color: #000000;
+  padding: 30px;
+  border-radius: 16px;
+  z-index: 10;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  display: none;
+  text-align: center;
+}
+#locationAlert button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
